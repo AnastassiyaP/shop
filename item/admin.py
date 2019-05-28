@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Item, MarketingCampaign, User, get_items
+
+
+admin.site.register(Item)
+admin.site.register(MarketingCampaign)
+admin.site.register(User)
