@@ -40,7 +40,7 @@ class User(DjangoAbstractUser):
 
 from django.db.models import Count, Sum, Q
 
-def get_items(sex, price):
+def get_items(sex=None, price=None):
     qs = Item.objects
     f = Q(user__date_joined__lt='2019-05-01')
 
