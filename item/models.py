@@ -46,7 +46,6 @@ def get_items(sex=None, price=None):
 
     if sex:
         sex_filter = Q(user__sex=sex)
-        f &= sex_filter
         qs = qs.filter(sex_filter)
 
     if price:
